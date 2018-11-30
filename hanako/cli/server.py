@@ -3,6 +3,7 @@
 import sys
 from argparse import ArgumentParser
 from hanako.meta import version
+from hanako.server.api import api
 
 def get_parser():
     parser = ArgumentParser(prog='hanako', description='Real-time multiplayer server')
@@ -21,6 +22,7 @@ def run_server():
         sys.exit(0)
 
     print("Welcome to Hanako server")
+    api.run()
 
 if __name__ == '__main__':
     run_server()
