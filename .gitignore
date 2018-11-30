@@ -92,10 +92,10 @@ ENV/
 env.bak/
 venv.bak/
 
-hanko/bin
-hanko/lib64
-hanko/pyvenv.cfg
-hanko/share/
+hanako/bin
+hanako/lib64
+hanako/pyvenv.cfg
+hanako/share/
 
 # Spyder project settings
 .spyderproject
@@ -109,3 +109,4 @@ hanko/share/
 
 # mypy
 .mypy_cache/
+hanako/lib64
