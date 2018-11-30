@@ -82,6 +82,8 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
+.vscode
+
 .env
 .venv
 env/
@@ -89,6 +91,11 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+
+hanko/bin
+hanko/lib64
+hanko/pyvenv.cfg
+hanko/share/
 
 # Spyder project settings
 .spyderproject
