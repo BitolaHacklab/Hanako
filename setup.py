@@ -1,4 +1,5 @@
 import setuptools
+from hackaton.meta import version
 
 
 with open('README.md', 'r') as fh:
@@ -7,7 +8,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name="hanako",
-    version="0.0.1",
+    version=version,
     author="BitolaHacklab",
     author_email="dev@bitolahacklab.org",
     description="Real time multiplayer game server.",
