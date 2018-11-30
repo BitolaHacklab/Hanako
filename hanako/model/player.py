@@ -1,11 +1,12 @@
 class Player:
     """Player class"""
     
-    def __init__(self, name):
+    def __init__(self, id, name):
+        self.id = id
         self.name = name
 
     def __str__():
-        info = "User %s", self.info
+        info = "User %s", self.name
         return info
 
     def __repr__():
@@ -18,7 +19,7 @@ class Room:
         self.name = name
     
      def __str__():
-        info = "Room %s", self.info
+        info = "Room %s", self.name
         return info
 
     def __repr__():
