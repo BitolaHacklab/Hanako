@@ -7,11 +7,15 @@ class World(object):
         self.id = id
         self.name = name
 
+    def __str__(self):
+        return "World [id]={0} [name]={1}".format(self.id, self.name)
+
 
 class Action(objec):
     '''Action object'''
-
     def __init__(self, id, name):
         self.id = id
         self.name = name
 
+    def __str__(self):
+        return "Action [id]={0} [name]={1}".format(self.id, self.name)
