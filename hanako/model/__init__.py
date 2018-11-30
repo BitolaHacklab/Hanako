@@ -1,2 +1,2 @@
-from .Action import Action
-from .World import World
+from .world import Action
+from .world import World
