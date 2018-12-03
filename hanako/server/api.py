@@ -10,7 +10,7 @@ api.register_blueprint(room_api)
 
 @api.route('/health')
 def health_check():
-    return Response(os.uname())
+    return 'Health OK for: ' + str(Response(os.uname()))
 
 @api.route('/api/v1/cqrs', methods=['POST'])
 def cqrs():
