@@ -11,7 +11,7 @@ class World(object):
         return "World [id]={0} [name]={1}".format(self.id, self.name)
 
 
-class Action(objec):
+class Action(object):
     '''Action object'''
     def __init__(self, id, name):
         self.id = id
