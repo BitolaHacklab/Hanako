@@ -10,6 +10,10 @@ def create_player():
 def get_players():
     return ''
 
+@player_api.route('/api/v1/<room_id>/players', methods=['GET'])
+def get_room_players(room_id):
+    return ''
+
 @player_api.route('/api/v1/players/<player_id>', methods=['GET'])
 def get_player(player_id):
     return player_id
@@ -20,12 +24,4 @@ def update_player(player_id):
 
 @player_api.route('/api/v1/players/<player_id>', methods=['DELETE'])
 def delete_player(player_id):
-    return player_id
-
-@player_api.route('/api/v1/players/<player_id>/rooms', methods=['POST'])
-def join_room(player_id):
-    return player_id
-
-@player_api.route('/api/v1/players/<player_id>/rooms', methods=['DELETE'])
-def leave_room(player_id):
     return player_id
