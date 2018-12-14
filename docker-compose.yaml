@@ -1,0 +1,31 @@
+version: '3.7'
+
+services:
+
+  web:
+    container_name: webapp
+    build: .
+    volumes:
+      - . /code
+    restart: on-failure
+    ports:
+      - "8001:8001"
+    networks:
+      - hanako
+
+  mongodb:
+    container_name: mongodb
+    image: mongo:4.1
+    environment:
+      - MONGO_DATA_DIR=/data/db
+      - MONGO_LOG_DIR=/dev/null
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - 27017:27017
+    networks:
+      - hanako
+
+networks:
+  hanako:
+    name: hanako
