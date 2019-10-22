@@ -12,6 +12,6 @@ py==1.7.0
 pytest==4.0.1
 pytest-cov==2.6.0
 six==1.11.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 yapf==0.25.0
 pymongo==3.7.2

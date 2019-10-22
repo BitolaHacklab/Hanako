@@ -13,5 +13,5 @@ pytest==4.0.1
 pytest-cov==2.6.0
 pytest-flask==0.14.0
 six==1.11.0
-Werkzeug==0.14.1
+Werkzeug==0.15.3
 yapf==0.25.0
